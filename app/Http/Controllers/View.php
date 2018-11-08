@@ -8,19 +8,19 @@ Use App\Genre as Genre;
 
 class View extends Controller
 {
-    public function contact($name){
-    return view('contact', [
-    "name" => $name,
-    "data" => [
-        "pizza",
-        "tofu",
-        "poivron",
-        "herbe",
-        "piments",
-    ],
-    'showAside' => true,
-    ]);
-    }
+    // public function contact($name){
+    // return view('contact', [
+    // "name" => $name,
+    // "data" => [
+    //     "pizza",
+    //     "tofu",
+    //     "poivron",
+    //     "herbe",
+    //     "piments",
+    // ],
+    // 'showAside' => true,
+    // ]);
+    // }
     
     public function home() {
         return view('home');

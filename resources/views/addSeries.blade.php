@@ -23,10 +23,10 @@
                     <div class="input-group-prepend">
                       <label class="input-group-text" for="inputGroupSelect01">actors</label>
                     </div>
-                    <select name="actors" class="custom-select" id="inputGroupSelect01">
+                    <select multiple name="actors[]" class="custom-select" id="inputGroupSelect01">
                         @foreach ($actors as $actor)
                         {{-- je parcours ma variable actors dans laquelle je récupére la valeur actor
-                        je récupére l'id de ma valeur  --}}
+                        je récupére l'id de ma valeur  --}} 
                             <option value="{{ $actor->id }}">
                                 {{ $actor->completeName() }}
                             </option>
@@ -37,7 +37,7 @@
                     <div class="input-group-prepend">
                         <label class="input-group-text" for="inputGroupSelect01">genres</label>
                     </div>
-                    <select name="genres" class="custom-select" id="inputGroupSelect01">
+                    <select multiple name="genres[]" class="custom-select" id="inputGroupSelect01">
                         @foreach ($genres as $genre)
                             <option value="{{ $genre->id }}">
                                 {{ $genre->name }}
